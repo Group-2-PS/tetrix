@@ -1,0 +1,30 @@
+.menu {
+    height: 75px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    a {
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        color: bisque;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 75px;
+        width: 100px;
+        position: relative;
+
+        &:hover {
+            background-image: linear-gradient(to top, rgba(26,26,151,.5), rgba(0,0,0,0))
+        }
+
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

@@ -1,41 +1,8 @@
-<div class="nav-bar-wrapper">
-  <div class="nav-bar">
-    <a router-link="/">
-      <img src="../assets/images/tetrix-banner.jpeg">
-    </a>
-  </div>
+<app-nav-bar></app-nav-bar>
+    
+<div class="content">
+    <router-outlet></router-outlet>
 </div>
 
-<router-outlet></router-outlet>
-<div class="card">
-  <p>Tetrix es un juego desarrollado para Adroid basado en el clásico juego Tetris.</p>
-  <p>La finalidad de este proyecto es replicar el desarrollado de un determinado software haciendo uso de las metodologías ágiles, concrétamente Scrum.</p>
-  <p>Podeis seguir la evolución del juego a través de nuestro repositorio de <a href="https://github.com/Group-2-PS/Tetris">GitHub</a> o a través de nuestra cuenta de <a href="https://twitter.com/PuzzleTetrix">Twitter</a>.</p>
-</div>
-<div class="card">
-  <p>Para el desarrollo de la prática asignaremos distintos roles a los integrantes del grupo para simular un equipo scrum.</p>
-  <h4>Scrum Master</h4>
-  <h4>Product Owner</h4>
-  <h4>Equipo de desarrollo</h4>
-  <ul>
-    <li>
-      Miguel Ángel Monreal Velasco
-    </li>
-  </ul>
-</div>
-<div class="card">
-  <h2>Fase 1</h2>
-  <p>En esta primera fase del juego hemos definido el esquma básico del producto, tanto a nivel de diseño como de software.</p>
-  <p>Hemos definido las distintas piezas, y sus distintos moviminetos. Hemos implementado también la caida de las mismas y el borrado de las lineas completas, con el consiguiente aumento de puntos.</p>
-  <p>Han sido diseñados los sprites que se usarán para las piezas en un único color, con posibilidad de crear nuevas piezas a futuro.</p>
-</div>
-<!-- <div class="footer">
-    <a href="https://twitter.com/PuzzleTetrix">
-      <i class="fab fa-twitter"></i>
-      <span>Twitter</span>
-    </a>
-    <a href="https://github.com/Group-2-PS/Tetris">
-      <i class="fab fa-github"></i>
-      <span>GitHub</span>
-    </a>
-</div> -->
+<app-footer></app-footer>
+

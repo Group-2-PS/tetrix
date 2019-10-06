@@ -1,38 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-
-$nav-bar-height: 75px;
-$dark-color: #111;
+@import "assets/scss/variable.scss";
 
 html {
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: $dark-color;
 
     body {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: bisque;
+        text-align: justify;
+        margin: 0;
+        height: 100vh;
+        perspective: 1px;
+        transform-style: preserve-3d;
         overflow-y: auto;
         overflow-x: hidden;
-        transform-style: preserve-3d;
-        perspective: 1px;
+        
 
-        &::before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            background-image: url("assets/images/wp2675347-tetris-wallpaper.jpg");
-            top: 0;
-            left: 0;
-            position: absolute;
-            z-index: -1;
-            transform: translateZ(-1px) scale(3);
-        }
-
-        .nav-bar-wrapper {
+        .navbar-wrapper {
             background-color: $dark-color;
             height: $nav-bar-height;
             width: 100%;
@@ -41,7 +26,7 @@ html {
             -webkit-box-shadow: 0 8px 6px -6px black;
 	        -moz-box-shadow: 0 8px 6px -6px black;
             box-shadow: 0 8px 6px -6px black;
-            margin-bottom: 20px;
+            margin-bottom: 75px;
             z-index: 10;
 
             .nav-bar {
@@ -54,21 +39,34 @@ html {
             }
         }
 
-        .card {
-            width: 60%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: $dark-color;
-            color: bisque;
-            -moz-box-shadow:    0 0 10px #000000;
-            -webkit-box-shadow: 0 0 10px #000000;
-            box-shadow:         0 0 10px #000000;
+        .card-parallax {
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            transform-style: preserve-3d; 
+
+            &::before {
+                content: "";
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background-image: url("assets/images/wp2675347-tetris-wallpaper.jpg");
+                position: absolute;
+                z-index: -1;
+                transform: translateZ(-1px) scale(2);
+            }
+
+            .card-parallax-content {
+                margin: 0 auto;
+                padding: 50px;
+                width: 60%;
+                background: $dark-color;
+            }
         }
 
         .footer {
-            background-color: #000000;
+            background-color: $dark-color;
             width: 100%;
             bottom: 0;
             position: absolute;
@@ -80,5 +78,11 @@ html {
                 padding: 10px;
             }
         }
+    }
+}
+
+a {
+    &:vertical {
+        color: bisque;
     }
 }
