@@ -1,3 +1,5 @@
+@import "../../assets/scss/variable.scss";
+
 .menu {
     height: 75px;
     position: absolute;
@@ -13,7 +15,7 @@
         font-weight: bold;
         padding-left: 20px;
         padding-right: 20px;
-        height: 75px;
+        height: $nav-bar-height;
         width: 100px;
         position: relative;
 
@@ -25,6 +27,36 @@
             position: absolute;
             top: 50%;
             transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.social-media {
+    position: absolute;
+    height: $nav-bar-height;
+    right: 0;
+    top: 0;
+
+    .social-media-content {
+        position: relative;
+        height: 100%;
+        font-size: 25px;
+
+        a {
+            float: left;
+            text-align: left;
+            text-decoration: none;
+            color: bisque;
+            font-weight: bold;
+            height: $nav-bar-height;
+            width: 50px;
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }
