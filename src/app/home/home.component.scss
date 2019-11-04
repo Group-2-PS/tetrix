@@ -1,4 +1,13 @@
+@import "../../assets/scss/variable.scss";
+
 img {
     width: 15%;
     margin: 10px;
+}
+
+@media (max-width: $large-screen) {
+    img {
+        width: 90%;
+        margin: 5%;
+    }
 }

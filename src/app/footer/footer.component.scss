@@ -1,3 +1,5 @@
+@import "../../assets/scss/variable.scss";
+
 .footer {
     color: bisque;
     position: relative;
@@ -8,6 +10,28 @@
          
         i {
             margin-right: 5px;
+        }
+    }
+}
+
+@media (max-width: $large-screen) {
+    .footer {
+        color: bisque;
+        position: relative;
+        width: 100%;
+        a {
+            width: 33%;
+            text-decoration: none;
+            color: bisque;
+            font-size: 32px;
+             
+            i {
+                margin-right: 5px;
+            }
+
+            span {
+                display: none;
+            }
         }
     }
 }

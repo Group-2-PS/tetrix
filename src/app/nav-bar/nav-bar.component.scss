@@ -20,7 +20,7 @@
         position: relative;
 
         &:hover {
-            background-image: linear-gradient(to top, rgba(26,26,151,.5), rgba(0,0,0,0))
+            background-image: linear-gradient(to top, $dark-blue-alpha, rgba(0,0,0,0));
         }
 
         span {
@@ -29,6 +29,9 @@
             transform: translate(-50%, -50%);
         }
     }
+}
+.side-menu {
+    display: none;       
 }
 
 .social-media {
@@ -56,6 +59,46 @@
                 position: absolute;
                 top: 50%;
                 transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media (max-width: $large-screen) {
+    .menu {
+        display: none;
+    }
+
+    .side-menu {
+
+    }
+    
+    .social-media {
+        position: absolute;
+        height: $nav-bar-height;
+        right: 0;
+        top: 0;
+    
+        .social-media-content {
+            position: relative;
+            height: 100%;
+            font-size: 25px;
+    
+            a {
+                float: left;
+                text-align: left;
+                text-decoration: none;
+                color: bisque;
+                font-weight: bold;
+                height: $nav-bar-height;
+                width: 50px;
+                position: relative;
+    
+                i {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
