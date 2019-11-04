@@ -8,7 +8,7 @@ import { TutorialComponent } from './tutorial/tutorial.component';
 
 const routes: Routes = [ 
   {
-    path: 'tetrix',
+    path: '',
     component: HomeComponent
   },
   {
