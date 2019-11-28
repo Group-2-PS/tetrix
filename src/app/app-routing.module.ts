@@ -4,6 +4,7 @@ import { TeamComponent } from './team/team.component';
 import { HomeComponent } from './home/home.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
+import { ManualComponent } from './manual/manual.component';
 
 
 const routes: Routes = [ 
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'tutorial',
     component: TutorialComponent
+  },
+  {
+    path: 'manual',
+    component: ManualComponent
   }
 ];
 

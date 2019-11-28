@@ -1,0 +1,20 @@
+@import "../../assets/scss/variable";
+
+.manual-wrapper {
+    width: 100%;
+
+    .manual-content {
+        width: 50%;
+        margin: 0 auto;
+        color: $main-font-color;
+
+        p {
+            text-align: justify;
+        }
+
+        .steps-wrapper {
+            width: 100%;
+            padding-left: 25px;;
+        }
+    }
+}

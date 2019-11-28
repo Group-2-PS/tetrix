@@ -10,6 +10,9 @@ import { SprintComponent } from './sprint/sprint.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ManualComponent } from './manual/manual.component';
+import { ClickHereComponent } from './click-here/click-here.component';
+import { ClickGithubComponent } from './click-github/click-github.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeComponent,
     SprintComponent,
     TutorialComponent,
-    FooterComponent
+    FooterComponent,
+    ManualComponent,
+    ClickHereComponent,
+    ClickGithubComponent
   ],
   imports: [
     BrowserModule,

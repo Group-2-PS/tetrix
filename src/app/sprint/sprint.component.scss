@@ -16,7 +16,7 @@ img {
         width: 50%;
         display: inline-block;
         text-align: center;
-        border-bottom: bisque 1px solid;
+        border-bottom: $main-font-color 1px solid;
 
         &.active {
             background-image: linear-gradient(to top, $dark-blue-alpha, rgba(0,0,0,0));

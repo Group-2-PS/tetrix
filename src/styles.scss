@@ -7,7 +7,7 @@ html {
 
     body {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: bisque;
+        color: $main-font-color;
         text-align: justify;
         margin: 0;
         height: 100vh;
@@ -126,9 +126,9 @@ html {
 }
 
 a {
-    color: burlywood;
+    color: $ref-color;
     &:vertical {
-        color: bisque;
+        color: $main-font-color;
     }
 }
 
@@ -139,7 +139,7 @@ a {
     
         body {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: bisque;
+            color: $main-font-color;
             text-align: justify;
             margin: 0;
             height: 100vh;
@@ -247,7 +247,7 @@ a {
     
     a {
         &:vertical {
-            color: bisque;
+            color: $main-font-color;
         }
     }    
 }

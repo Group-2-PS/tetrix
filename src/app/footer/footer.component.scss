@@ -1,11 +1,11 @@
-@import "../../assets/scss/variable.scss";
+@import "../../assets/scss/variable";
 
 .footer {
-    color: bisque;
+    color: $main-font-color;
     position: relative;
     a {
         text-decoration: none;
-        color: bisque;
+        color: $main-font-color;
         font-size: 32px;
          
         i {
@@ -16,13 +16,13 @@
 
 @media (max-width: $large-screen) {
     .footer {
-        color: bisque;
+        color: $main-font-color;
         position: relative;
         width: 100%;
         a {
             width: 33%;
             text-decoration: none;
-            color: bisque;
+            color: $main-font-color;
             font-size: 32px;
              
             i {
