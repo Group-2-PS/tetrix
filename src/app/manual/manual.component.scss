@@ -18,3 +18,10 @@
         }
     }
 }
+@media (max-width: $large-screen) {
+    .manual-wrapper {
+        .manual-content{
+            width: 85%;
+        }
+    }
+}

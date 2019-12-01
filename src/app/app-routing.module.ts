@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { SprintComponent } from './sprint/sprint.component';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { ManualComponent } from './manual/manual.component';
+import { AgileModule } from './agile/agile.module';
+import { AgileComponent } from './agile/agile/agile.component';
 
 
 const routes: Routes = [ 
@@ -27,11 +29,18 @@ const routes: Routes = [
   {
     path: 'manual',
     component: ManualComponent
+  },
+  {
+    path: 'agile',
+    component: AgileComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes),
+    AgileModule
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
