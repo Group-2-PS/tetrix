@@ -1,27 +1,28 @@
 @import "../../assets/scss/variable";
 
 .manual-wrapper {
-    width: 100%;
+  width: 100%;
 
-    .manual-content {
-        width: 50%;
-        margin: 0 auto;
-        color: $main-font-color;
+  .manual-content {
+    width: 50%;
+    margin: 0 auto;
+    color: $main-font-color;
 
-        p {
-            text-align: justify;
-        }
-
-        .steps-wrapper {
-            width: 100%;
-            padding-left: 25px;;
-        }
+    p {
+      text-align: justify;
     }
+
+    .steps-wrapper {
+      width: 60%;
+      max-width: 850px;
+      padding-left: 25px;
+    }
+  }
 }
 @media (max-width: $large-screen) {
-    .manual-wrapper {
-        .manual-content{
-            width: 85%;
-        }
+  .manual-wrapper {
+    .manual-content {
+      width: 85%;
     }
+  }
 }
