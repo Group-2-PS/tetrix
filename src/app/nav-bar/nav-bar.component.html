@@ -1,25 +1,28 @@
 <div class="navbar-wrapper">
     <div class="nav-bar">
+        <div class="hamburger-menu" (click)="showSideMenu()">
+                <i class="fas fa-bars"></i>
+        </div>
         <div class="logo">
             <a routerLink="/">
                 <img class="logo-large" src="assets/images/logotransparente.png">
                 <img class="logo-small" src="assets/images/EGDSTwDXkAIj-dl.jpg">
             </a>
         </div>
-        <div class="menu">
-            <a routerLink="/">
+        <div class="menu" [class.show]="showMobileMenu">
+            <a routerLink="/" (click)="showSideMenu()">
                 <span>Home</span>
             </a>
-            <a routerLink="team">
+            <a routerLink="team" (click)="showSideMenu()">
                 <span>Equipo</span>
             </a>
-            <a routerLink="sprint">
+            <a routerLink="sprint"(click)="showSideMenu()">
                 <span>Sprint</span>
             </a>
-            <a routerLink="agile">
+            <a routerLink="agile" (click)="showSideMenu()">
                 <span>Agile</span>
             </a>
-            <a routerLink="manual">
+            <a routerLink="manual" (click)="showSideMenu()">
                 <span>Manual</span>
             </a>
         </div>

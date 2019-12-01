@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  showMobileMenu: boolean = false;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  showSideMenu(): void {
+    this.showMobileMenu = !this.showMobileMenu;
+  }
 }
