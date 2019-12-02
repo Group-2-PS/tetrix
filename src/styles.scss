@@ -137,6 +137,28 @@ html {
         width: 60%;
         max-width: 850px;
         margin: 0 auto;
+
+        .text-img-wrapper {
+          position: relative;
+          width: 100%;
+          padding-bottom: 550px;
+
+          &.small-img {
+            padding-bottom: 150px;
+          }
+
+          &.medium-img {
+            padding-bottom: 400px;
+          }
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+          }
+        }
       }
     }
   }
@@ -275,8 +297,31 @@ a {
         width: 100%;
 
         .text-content {
+          
           .text-title {
             text-align: left;
+          }
+
+          .text-img-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 200px;
+  
+            &.small-img {
+              padding-bottom: 50px;
+            }
+  
+            &.medium-img {
+              padding-bottom: 150px;
+            }
+  
+            img {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 80%;
+            }
           }
 
           width: 85%;
